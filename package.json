@@ -1,0 +1,18 @@
+{
+  "name": "cursor_test",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n server,client -c green,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Online Gomoku (Five-in-a-row) - React + WebSocket",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
