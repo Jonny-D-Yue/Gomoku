@@ -47,7 +47,8 @@ function App() {
   const [toast, setToast] = useState<string>("");
 
   const wsUrl = useMemo(() => {
-    return import.meta.env.VITE_WS_URL || "ws://localhost:8080";
+//    return import.meta.env.VITE_WS_URL || "ws://localhost:8080";
+    return import.meta.env.VITE_WS_URL || "https://gomoku-backend-eruv.onrender.com";
   }, []);
 
   function send(msg: unknown) {
